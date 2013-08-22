@@ -10,9 +10,14 @@
 
 int main(int argc, const char * argv[])
 {
-
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    float height, weight;
+    
+    height = 169.7;
+    weight = 66.4;
+    
+    float height_m = height / 100.0;
+    float bmi = weight / (height_m * height_m);
+    
+    printf("BMI = %5.2f\n", bmi);
 }
 
