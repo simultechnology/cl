@@ -8,6 +8,12 @@
 
 #include <stdio.h>
 
+float calc_bmi(float height, float weight)
+{
+    float height_m = height / 100.0;
+    return weight / (height_m * height_m);
+}
+
 int main(int argc, const char * argv[])
 {
     float height, weight;
@@ -15,8 +21,7 @@ int main(int argc, const char * argv[])
     height = 169.7;
     weight = 66.4;
     
-    float height_m = height / 100.0;
-    float bmi = weight / (height_m * height_m);
+    float bmi = calc_bmi(height, weight);
     
     printf("BMI = %5.2f\n", bmi);
 }
