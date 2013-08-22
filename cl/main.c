@@ -14,6 +14,17 @@ float calc_bmi(float height, float weight)
     return weight / (height_m * height_m);
 }
 
+char *judge(float bmi)
+{
+    if (bmi < 18.5) {
+        return "Underweight";
+    } else if (bmi > 25.0) {
+        return "Ovarweight";
+    } else {
+        return "Normal range";
+    }
+}
+
 int main(int argc, const char * argv[])
 {
     float height, weight;
@@ -22,7 +33,6 @@ int main(int argc, const char * argv[])
     weight = 66.4;
     
     float bmi = calc_bmi(height, weight);
-    
-    printf("BMI = %5.2f\n", bmi);
+    printf("BMI = %5.2f %s\n", bmi, judge(bmi));
 }
 

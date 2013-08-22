@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		520B155B17C64C5100584B39 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 520B155A17C64C5100584B39 /* main.c */; };
 		520B155D17C64C5100584B39 /* cl.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 520B155C17C64C5100584B39 /* cl.1 */; };
-		520B156A17C64E1000584B39 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 520B156617C64E1000584B39 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,9 +28,6 @@
 		520B155717C64C5100584B39 /* cl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cl; sourceTree = BUILT_PRODUCTS_DIR; };
 		520B155A17C64C5100584B39 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		520B155C17C64C5100584B39 /* cl.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = cl.1; sourceTree = "<group>"; };
-		520B156517C64E1000584B39 /* cl.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = cl.1; sourceTree = "<group>"; };
-		520B156617C64E1000584B39 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		520B156717C64E1000584B39 /* cl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = cl.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +44,6 @@
 		520B154E17C64C5100584B39 = {
 			isa = PBXGroup;
 			children = (
-				520B156317C64E1000584B39 /* cl */,
 				520B155917C64C5100584B39 /* cl */,
 				520B155817C64C5100584B39 /* Products */,
 			);
@@ -69,29 +64,6 @@
 				520B155C17C64C5100584B39 /* cl.1 */,
 			);
 			path = cl;
-			sourceTree = "<group>";
-		};
-		520B156317C64E1000584B39 /* cl */ = {
-			isa = PBXGroup;
-			children = (
-				520B156417C64E1000584B39 /* cl */,
-				520B156717C64E1000584B39 /* cl.xcodeproj */,
-			);
-			name = cl;
-			sourceTree = "<group>";
-		};
-		520B156417C64E1000584B39 /* cl */ = {
-			isa = PBXGroup;
-			children = (
-				520B156517C64E1000584B39 /* cl.1 */,
-				520B156617C64E1000584B39 /* main.c */,
-			);
-			path = cl;
-			sourceTree = "<group>";
-		};
-		520B156817C64E1000584B39 /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,12 +105,6 @@
 			mainGroup = 520B154E17C64C5100584B39;
 			productRefGroup = 520B155817C64C5100584B39 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 520B156817C64E1000584B39 /* Products */;
-					ProjectRef = 520B156717C64E1000584B39 /* cl.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				520B155617C64C5100584B39 /* cl */,
@@ -152,7 +118,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				520B155B17C64C5100584B39 /* main.c in Sources */,
-				520B156A17C64E1000584B39 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +214,7 @@
 				520B156217C64C5100584B39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
